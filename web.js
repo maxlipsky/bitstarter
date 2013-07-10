@@ -7,9 +7,8 @@ app.get('/', function(request, response) {
   
   fs.readFile('./index.html', function (err, data) {
     if (err) throw err;
-    Ðresponse.writeHead(200, {"Content-Type": "text/plain"});
     response.write(data);
-    response.write.end();
+    console.log(data);
   });
     
 });
