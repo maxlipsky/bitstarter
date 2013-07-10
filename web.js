@@ -3,8 +3,9 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Ho!');
-  response.send('2');
+  
+  var data = 'Hi!';
+  response.send(data);
   var text = fs.readFileSync('index.html','utf8');
   console.log (text);
 });
