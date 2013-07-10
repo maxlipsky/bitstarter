@@ -7,7 +7,7 @@ app.get('/', function(request, response) {
   var text = fs.readFileSync('index.html','utf8');
   
   var data = 'Hi!';
-  response.send('1'+text);
+  response.send(text);
 });
 
 
