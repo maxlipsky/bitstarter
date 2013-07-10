@@ -4,6 +4,9 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   response.send('Ho!');
+
+  var text = fs.readFileSync('index.html','utf8');
+  console.log (text);
 });
 
 
